@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-tabs>
-      <v-tab>메뉴명1</v-tab>
-      <v-tab>메뉴명2</v-tab>
-      <v-tab>메뉴명3</v-tab>
+    <v-tabs background-color="#f4f4f4" center-active="true" centered="true">
+      <v-tab>메뉴명여섯자</v-tab>
+      <v-tab>메뉴명여섯자</v-tab>
+      <v-tab>메뉴명여섯자</v-tab>
     </v-tabs>
     <v-content>
       <HelloWorld />
@@ -15,7 +15,7 @@
 // vuetify import
 // global sass import 로 변경 예정
 .v-tabs {
-  background: #f4f4f4;
+  // background: #f4f4f4;
 
   .v-tabs-slider {
     display: none;
