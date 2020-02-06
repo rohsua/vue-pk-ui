@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-pk-ui
 
 ## Project setup
@@ -32,3 +33,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue-pk-ui
+>>>>>>> ceb872f70afbad11513c08746a4e433ac6ab0db5
