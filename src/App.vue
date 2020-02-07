@@ -12,15 +12,7 @@
 </template>
 
 <style lang="scss">
-// vuetify import
-// global sass import 로 변경 예정
-.v-tabs {
-  // background: #f4f4f4;
-
-  .v-tabs-slider {
-    display: none;
-  }
-}
+@import "@/styles/global.scss";
 </style>
 
 <script lang="ts">
