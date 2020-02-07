@@ -1,5 +1,12 @@
-.v-tabs {
+.theme--light.fb-tabs {
+    &>.v-tabs-bar {
+        height: 49.95px;
+        background-color: #f4f4f4;
+    }
     .v-tabs-slider {
         display: none;
+    }
+    .v-slide-group__prev {
+        display: none !important;
     }
 }

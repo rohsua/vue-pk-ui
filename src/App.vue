@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-tabs background-color="#f4f4f4" :center-active="true">
+    <v-tabs :center-active="true" class="fb-tabs">
       <v-tab>메뉴명여섯자</v-tab>
       <v-tab>메뉴명여섯자</v-tab>
       <v-tab>메뉴명여섯자</v-tab>
@@ -26,7 +26,6 @@ export default Vue.extend({
     HelloWorld
   },
 
-  data: () => ({
-  })
+  data: () => ({})
 });
 </script>
