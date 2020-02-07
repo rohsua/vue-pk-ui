@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-tabs background-color="#f4f4f4" center-active="true" centered="true">
+    <v-tabs background-color="#f4f4f4" :center-active="true">
       <v-tab>메뉴명여섯자</v-tab>
       <v-tab>메뉴명여섯자</v-tab>
       <v-tab>메뉴명여섯자</v-tab>
@@ -27,7 +27,6 @@ export default Vue.extend({
   },
 
   data: () => ({
-    //
   })
 });
 </script>
