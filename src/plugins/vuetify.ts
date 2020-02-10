@@ -6,7 +6,7 @@ import preset  from './preset/preset';
 Vue.use(Vuetify);
 
 const options = {
-  theme: { disable: true }
+  // theme: { disable: true }
 };
 
 export default new Vuetify({

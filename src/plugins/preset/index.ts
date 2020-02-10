@@ -1,4 +1,4 @@
 // Imports
 const { VuetifyPresetService } = require('@vuetify/cli-plugin-utils')
 
-module.exports = api => VuetifyPresetService(api, 'shrine')
+module.exports = (api: Function) => VuetifyPresetService(api, 'phonekeeper')
