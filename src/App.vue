@@ -1,31 +1,21 @@
 <template>
   <v-app>
-    <v-tabs :center-active="true" class="fb-tabs">
-      <v-tab>메뉴명여섯자</v-tab>
-      <v-tab>메뉴명여섯자</v-tab>
-      <v-tab>메뉴명여섯자</v-tab>
-    </v-tabs>
     <v-content>
-      <HelloWorld />
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <style lang="scss">
-// @import "@/styles/global.scss";
+@import "@/styles/global.scss";
 </style>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
 
 export default Vue.extend({
   name: "App",
-
-  components: {
-    HelloWorld
-  },
-
+  components: {},
   data: () => ({})
 });
 </script>
