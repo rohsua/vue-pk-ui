@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .v-tabs {
+        flex: 0 1 auto;
+    }
+    .VueCarousel {
+        height: 100%;
+    }
+    .VueCarousel-wrapper {
+        height: 100%;
+    }
+}
