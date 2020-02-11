@@ -1,11 +1,13 @@
 <template>
   <div class="wrap">
-    <Tabs />
+    <Tabs :currentSlide="currentSlide" @change:currentTab="handleTabChange" />
     <carousel
+      :value="currentSlide"
       :per-page="1"
       :mouse-drag="true"
       :paginationEnabled="false"
       :adjustableHeight="true"
+       @page-change="handleSlideChange"
     >
       <slide>
         Slide 1 Content <br />
@@ -98,6 +100,19 @@ export default Vue.extend({
     Tabs,
     Carousel,
     Slide
+  },
+  data() {
+    return {
+      currentSlide: 0
+    };
+  },
+  methods: {
+    handleTabChange(slideNum: number) {
+      this.currentSlide = slideNum;
+    },
+    handleSlideChange(slideNum: number) {
+      this.currentSlide = slideNum;
+    }
   }
 });
 </script>
