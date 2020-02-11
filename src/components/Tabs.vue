@@ -1,8 +1,8 @@
 <template>
-  <v-tabs v-model="activeTab" :center-active="true" @change="handleChange">
+  <v-tabs v-model="activeTab" :center-active="true" @change="handleChange" :hide-slider="true" grow>
     <v-tab>첫번째 메뉴명</v-tab>
-    <v-tab>두번째 메뉴명</v-tab>
-    <v-tab>세번째 메뉴명</v-tab>
+    <v-tab>두번째메뉴명</v-tab>
+    <v-tab>세번째메뉴명</v-tab>
   </v-tabs>
 </template>
 

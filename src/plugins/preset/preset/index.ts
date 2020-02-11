@@ -1,4 +1,4 @@
-require('./overrides.sass')
+require('./overrides.scss')
 
 const preset = {
     theme: {

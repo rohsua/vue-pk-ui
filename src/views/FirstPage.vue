@@ -7,7 +7,7 @@
       :mouse-drag="true"
       :paginationEnabled="false"
       :adjustableHeight="true"
-       @page-change="handleSlideChange"
+      @page-change="handleSlideChange"
     >
       <slide>
         Slide 1 Content <br />
