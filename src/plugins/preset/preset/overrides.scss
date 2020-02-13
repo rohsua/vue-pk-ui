@@ -23,11 +23,11 @@
             }
             &:before {
                 left: 0;
-                background-image: linear-gradient(to left, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);
+                background-image: linear-gradient(to right, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);
             }
             &:after {
                 right: 0;
-                background-image: linear-gradient(to right, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);
+                background-image: linear-gradient(to left, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);
             }
         }
         .v-tab:before,
