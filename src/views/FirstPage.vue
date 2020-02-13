@@ -16,7 +16,7 @@
         Slide 2 Content
       </slide>
       <slide>
-        <bar-chart :chart-data="chartdata" :options="options"></bar-chart>
+        <bar-chart :chartdata="chartdata" :options="options"></bar-chart>
       </slide>
     </carousel>
   </div>
@@ -90,8 +90,8 @@ export default Vue.extend({
   data() {
     return {
       currentSlide: 0,
-      chartdata: {},
-      options: {}
+      chartdata: chartdata,
+      options: options
     };
   },
   methods: {
