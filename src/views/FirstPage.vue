@@ -16,7 +16,14 @@
         Slide 2 Content
       </slide>
       <slide>
-        <bar-chart :chartdata="chartdata" :options="options"></bar-chart>
+        <div style="background: #444">
+          <bar-chart :chartdata="barChartData"></bar-chart>
+        </div>
+        <div
+          style="background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 70%, rgba(252,219,69,1) 100%);"
+        >
+          <line-chart></line-chart>
+        </div>
       </slide>
     </carousel>
   </div>
@@ -27,56 +34,23 @@ import Vue from "vue";
 // @ts-ignore
 import { Carousel, Slide } from "vue-carousel";
 import Tabs from "@/components/Tabs.vue";
-// @ts-ignore
-import BarChart from "@/components/Chart.vue";
+import BarChart from "@/components/BarChart.vue";
+import LineChart from "@/components/LineChart.vue";
 
-let chartColors = {
-  red: "rgb(255, 99, 132)",
-  orange: "rgb(255, 159, 64)",
-  yellow: "rgb(255, 205, 86)",
-  green: "rgb(75, 192, 192)",
-  blue: "rgb(54, 162, 235)",
-  purple: "rgb(153, 102, 255)",
-  grey: "rgb(201, 203, 207)"
-};
-const chartdata = {
+const barChartData = {
   labels: ["1월", "2월", "3월"],
   datasets: [
     {
-      label: "Dataset 1",
-      backgroundColor: chartColors.red,
-      data: [2, 4, 35, 23]
+      backgroundColor: "#fff",
+      barThickness: 20,
+      data: [59000, 54000, 64680]
     },
     {
-      label: "Dataset 2",
-      backgroundColor: chartColors.blue,
-      data: [4, 99, 28, 97]
+      backgroundColor: "#f44646",
+      barThickness: 20,
+      data: [10000, 10000, 10000]
     }
   ]
-};
-
-const options = {
-  title: {
-    display: true,
-    text: "Chart.js Bar Chart - Stacked"
-  },
-  tooltips: {
-    mode: "index",
-    intersect: false
-  },
-  responsive: true,
-  scales: {
-    xAxes: [
-      {
-        stacked: true
-      }
-    ],
-    yAxes: [
-      {
-        stacked: true
-      }
-    ]
-  }
 };
 
 export default Vue.extend({
@@ -85,13 +59,13 @@ export default Vue.extend({
     Tabs,
     Carousel,
     Slide,
-    BarChart
+    BarChart,
+    LineChart
   },
   data() {
     return {
       currentSlide: 0,
-      chartdata: chartdata,
-      options: options
+      barChartData: barChartData
     };
   },
   methods: {
