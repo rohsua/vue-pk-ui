@@ -16,7 +16,7 @@
         Slide 2 Content
       </slide>
       <slide>
-        <div style="background: #444">
+        <div>
           <bar-chart :chartdata="barChartData"></bar-chart>
         </div>
         <div

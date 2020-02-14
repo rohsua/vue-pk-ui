@@ -13,7 +13,6 @@ export default {
   data() {
     return {
       datacollection: {
-        //Data to be represented on x-axis
         labels: ["01월", "02월", "03월", "04월"],
         datasets: [
           {
@@ -24,7 +23,6 @@ export default {
             borderColor: "#fff",
             pointBorderColor: "#fff",
             lineTension: 0,
-            //Data to be represented on y-axis
             data: [20, 50, 30, 70]
           }
         ]
@@ -60,7 +58,6 @@ export default {
     };
   },
   mounted() {
-    //renderChart function renders the chart with the datacollection and options object.
     this.renderChart(this.datacollection, this.options);
   }
 };
