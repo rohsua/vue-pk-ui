@@ -1,36 +1,40 @@
 <template>
-  <div class="wrap">
-    <tabs :currentSlide="currentSlide" @change:currentTab="handleTabChange" />
-    <carousel
-      :value="currentSlide"
-      :per-page="1"
-      :mouse-drag="true"
-      :paginationEnabled="false"
-      :adjustableHeight="true"
-      @page-change="handleSlideChange"
-    >
-      <slide>
-        Slide 1 Content
-      </slide>
-      <slide>
-        Slide 2 Content
-      </slide>
-      <slide>
-        <div>
-          <bar-chart :chartdata="barChartData"></bar-chart>
-        </div>
-        <div
-          style="background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 70%, rgba(252,219,69,1) 100%);"
-        >
-          <line-chart></line-chart>
-        </div>
-      </slide>
-    </carousel>
-  </div>
+  <Container>
+    <div class="wrap page-first">
+      <tabs :currentSlide="currentSlide" @change:currentTab="handleTabChange" />
+      <carousel
+        :value="currentSlide"
+        :per-page="1"
+        :mouse-drag="true"
+        :paginationEnabled="false"
+        :adjustableHeight="true"
+        @page-change="handleSlideChange"
+      >
+        <slide>
+          Slide 1 Content
+        </slide>
+        <slide>
+          Slide 2 Content
+        </slide>
+        <slide>
+          <div>
+            <bar-chart :chartdata="barChartData"></bar-chart>
+          </div>
+          <div
+            style="background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 70%, rgba(252,219,69,1) 100%);"
+          >
+            <line-chart></line-chart>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </Container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Container from "@/views/container/index.vue";
+
 // @ts-ignore
 import { Carousel, Slide } from "vue-carousel";
 import Tabs from "@/components/Tabs.vue";
@@ -56,6 +60,7 @@ const barChartData = {
 export default Vue.extend({
   name: "FirstPage",
   components: {
+    Container,
     Tabs,
     Carousel,
     Slide,

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap page-second">
     <Tabs />
     <carousel
       :per-page="1"
@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import Tabs from "../components/Tabs.vue";
+import Tabs from "@/components/Tabs.vue";
 import { Carousel, Slide } from "vue-carousel";
-import SparklineChart from "../components/SparklineChart.vue";
+import SparklineChart from "@/components/SparklineChart.vue";
 
 export default {
   name: "SecondPage",
